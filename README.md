@@ -2,11 +2,15 @@
 
 An initiation into the psychology of C.G. Jung, in five acts: a single long-scroll experience that descends from the persona to the dark night of the soul and returns through the alchemical stages (nigredo → albedo → citrinitas → rubedo). Built from [PROMPT.md](PROMPT.md).
 
+**Live:** https://blinky1994.github.io/descent-jung/
+
 ```bash
 npm install
 npm run dev      # http://localhost:3000
 npm run build    # static export to ./out, deployable anywhere
 ```
+
+Every push to `main` deploys to GitHub Pages via `.github/workflows/deploy.yml`. The workflow sets `PAGES_BASE_PATH` so assets resolve under `/descent-jung/`; locally it's empty and the site serves from `/`.
 
 ## Structure
 
